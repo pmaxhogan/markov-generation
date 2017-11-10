@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const Marakov = require("./index.js");
 
 if(!process.argv[2]){
