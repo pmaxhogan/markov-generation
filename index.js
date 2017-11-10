@@ -54,7 +54,7 @@ const Markov = function(data, doLog){
   		});
       best = best.map(word => {
         log("compare", JSON.stringify(words[word]), words[word].termCount, highest);
-        if(words[word].termCount > 0 && words[word].termCount > highest - (Math.random() * 2)){
+        if(words[word].termCount > 0 && words[word].termCount > highest - (Math.random() * 3.5)){
           log("termCount is high");
           // throw 0;
           return word + randElem([". ", ". ", ". ", ". ", ". ", ". ", ". ", "! ", "! ", "? ", "? ", "!! ", "?? "]);
